@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_14sdp"
+    android:background="@color/bg_color"
+    tools:context="com.slve.ratingjob.activity.LoginActivity">
+
+
+
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:background="@drawable/edit_text_bg_new"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:drawableStart="@drawable/name_i"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:textColorHint="@color/grey_light"/>
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+
+
+
+
+                <EditText
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/edit_text_bg_new"
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/grey_light"
+                    android:fontFamily="@font/poppins_medium"
+                    android:password="true"
+                    android:drawableStart="@drawable/lock_i"
+                    android:drawablePadding="@dimen/_10sdp"
+                    app:passwordToggleDrawable="@drawable/show_password_selector" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="right"
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password ?"
+                    android:textColor="@color/blue_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                app:cornerRadius="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_color"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvSignin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an account"
+                android:textColor="@color/secondary_color"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/poppins_semibold"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

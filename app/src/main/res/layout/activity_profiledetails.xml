@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_14sdp"
+    android:background="@color/bg_color"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp">
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_left" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="none"
+        android:layout_below="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@drawable/edit_text_bg_new"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="@dimen/_8sdp"
+            android:drawableStart="@drawable/mobile"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textColorHint="@color/grey_light"/>
+
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+
+        <EditText
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_bg_new"
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textColorHint="@color/grey_light"
+            android:fontFamily="@font/poppins_medium"
+            android:drawableStart="@drawable/name_i"
+            android:drawablePadding="@dimen/_10sdp"
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+
+
+        <EditText
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_bg_new"
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/grey_light"
+            android:fontFamily="@font/poppins_medium"
+            android:password="true"
+            android:drawableStart="@drawable/lock_i"
+            android:drawablePadding="@dimen/_10sdp"
+            app:passwordToggleDrawable="@drawable/show_password_selector" />
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+
+        <EditText
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_bg_new"
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/grey_light"
+            android:fontFamily="@font/poppins_medium"
+            android:password="true"
+            android:drawableStart="@drawable/lock_i"
+            android:drawablePadding="@dimen/_10sdp"
+            app:passwordToggleDrawable="@drawable/show_password_selector"
+            />
+
+
+        <TextView
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+        <EditText
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_bg_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/etEmail"
+            android:drawableStart="@drawable/mail_i"
+            android:drawablePadding="@dimen/_10sdp"
+            />
+
+
+        <TextView
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+        <EditText
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_bg_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="phone"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/etAge"
+            android:drawableStart="@drawable/age_i"
+            android:drawablePadding="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <EditText
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_bg_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="phone"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/etCity"
+            android:drawableStart="@drawable/location_i"
+            android:drawablePadding="@dimen/_10sdp"
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select State"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+
+            <Spinner
+                android:background="@drawable/edit_text_bg_new"
+                android:drawableStart="@drawable/name_i"
+                android:id="@+id/spino"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Select State"
+                android:fontFamily="@font/poppins_medium"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:inputType="none"
+                tools:text="" />
+
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Referal code"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+
+            <EditText
+                android:background="@drawable/edit_text_bg_new"
+                android:drawableStart="@drawable/name_i"
+                android:id="@+id/etReferCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/_8sdp"
+                android:hint="Refferal Code"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+               />
+
+
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            app:cornerRadius="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

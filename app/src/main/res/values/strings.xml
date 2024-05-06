@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Rating Job</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    //DATA
+
+
+    <string name="sentence_one">Overall, I found the product to be quite satisfactory in terms of quality and performance.</string>
+    <string name="sentence_two">The product exceeded my expectations, delivering exceptional value for its price.</string>
+    <string name="sentence_three">One of the standout features of this product is its durability, which impressed me.</string>
+    <string name="sentence_four">I appreciate the user-friendly design of the product, making it easy to use for beginners.</string>
+    <string name="sentence_five">However, I did encounter a minor issue with [specific feature], which slightly detracted from my experience.</string>
+    <string name="sentence_seven">In terms of aesthetics, the product has a modern and sleek design that enhances its appeal.</string>
+    <string name="sentence_eight">The customer service provided by the company was excellent, promptly addressing any concerns I had.</string>
+    <string name="sentence_nine">After using the product for an extended period, I can confidently say it has significantly improved my [specific aspect].</string>
+    <string name="sentence_ten">In conclusion, I would highly recommend this product to anyone in need of [its intended purpose].</string>
+
+
+    //Headings
+    <string name="heading_one">Farming</string>
+    <string name="heading_two">Buying</string>
+    <string name="heading_three">Selling</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+
+    <string name="count_text">%d/%d</string>
+
+
+    //Description
+    <string name="desc_one">Harvesting vegetables from our farm buy and selling fresh vegetables</string>
+    <string name="desc_two">Buying vegetables from our farm and put margin resell to the market</string>
+    <string name="desc_three">Selling your vegetables to our marketplace and earn money</string>
+    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="withdrwal_instraction">1. Minimum withdrawal amount is 200RS\n2. Withdrawal time: Monday to Friday 10:00am-05:30pm\n3. Do not rush your manager within 48 hours of application submission. Once you submit your withdrawal, the bank is queuing up to process it for you. If your withdrawal has not been received within 48 hours, please contact your manager for enquiry \n4. IFSC should be 11 characters and the fifth character should be 0, not O. If you fill in incorrect bank information, your withdrawal will fail.</string>
+    <string name="bank_instraction">Cardholder name (5-30 characters).\nIfsc is 11 characters and the fifth digit is the number 0.</string>
+
+
+    <string name="app_instraction">*Rating job is a platform where users not only rate and review their  Product but also earn money rewards for their valuable contributions.
+    \n\n*Users can earn real cash rewards for rating and reviewing various types of content, including Products.
+        \n\n*Our app provides full transparency on how users can earn money, ensuring clarity and trust in the reward process.
+        \n\n*Invite friends and family to join Rating Rewards and earn additional rewards for every new user referred, amplifying earning potential.
+    </string>
+
+
+</resources>

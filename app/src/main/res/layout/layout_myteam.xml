@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlMain"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/rounded_corner"
+    android:backgroundTint="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/llInvite"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:background="@color/primary_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+
+            <TextView
+                android:id="@+id/tvViewMore"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View more"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llInviteDetails"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register Date"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvJoinTime"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 AM"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Referrer"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvReferrer"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assets"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvAssets"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

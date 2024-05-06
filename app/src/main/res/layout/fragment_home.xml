@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_14sdp"
+    tools:context=".Fragment.HomeFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello "
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvReferralCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvName"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlRecharge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvRecharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/gold_color"
+            android:drawableLeft="@drawable/add_recharge"
+            android:drawablePadding="@dimen/_10sdp"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:src="@drawable/rating_img2"
+            />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true"
+                >
+
+
+                <TextView
+                    android:layout_below="@+id/rlHeader"
+                    android:id="@+id/tvinstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/app_instraction"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/blue_color"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

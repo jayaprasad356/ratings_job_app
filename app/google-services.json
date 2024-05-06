@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "41088313235",
+    "project_id": "ratingjob-63243",
+    "storage_bucket": "ratingjob-63243.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41088313235:android:b1277d78bcc0fd72ffaa66",
+        "android_client_info": {
+          "package_name": "com.slve.ratingjob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABSZzvoTUD6lgMnyI93KOGj8A7hhyqYBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

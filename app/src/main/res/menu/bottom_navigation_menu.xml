@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+
+    <item
+        android:id="@+id/navplan"
+        android:icon="@drawable/plan"
+        android:title="Your Plan" />
+
+
+    <item
+        android:id="@+id/navMyteam"
+        android:icon="@drawable/tranfer"
+        android:title="My Team" />
+
+    <item
+        android:id="@+id/navMore"
+        android:icon="@drawable/setting_dynamic_color"
+        android:title="My Account" />
+
+</menu>

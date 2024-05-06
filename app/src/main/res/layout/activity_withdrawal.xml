@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WithdrawalActivity"
+    android:background="@drawable/bg_new"
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/topbar_2"
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                >
+
+                <ImageButton
+                    android:id="@+id/ibBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_left" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Withdraw"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:padding="@dimen/_10sdp"
+        android:layout_below="@+id/rlToolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvTotalEarnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:textSize="@dimen/_14sdp"
+            android:textAlignment="center"
+            android:textColor="@color/blue_color"
+            android:fontFamily="@font/inter_semibold"
+            />
+
+
+        <TextView
+            android:id="@+id/tvWithdraw"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_semibold"
+                />
+
+
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/_30sdp"
+                android:inputType="number"
+                android:background="@drawable/edit_text_bg"
+                >
+
+                <requestFocus />
+            </EditText>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnWithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/primary_color"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="Withdraw"
+        android:textAllCaps="false"
+        app:cornerRadius="@dimen/_10sdp" />
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

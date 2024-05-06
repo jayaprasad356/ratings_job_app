@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/coordinatorLayout"
+    android:background="@drawable/bg_new"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:background="@drawable/topbar_2"
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:padding="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WeAgri"
+                android:gravity="center"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/_16sdp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <FrameLayout
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorHeight="4dp"
+        app:abb_indicatorMargin="16dp"
+        app:abb_selectedIndex="0"
+        app:abb_indicatorColor="@color/primary_color"
+        app:abb_tabColorSelected="@color/secondary_color"
+        app:abb_tabColor="@color/blue_color"
+
+        app:abb_selectedTabType="text"
+        app:abb_tabs="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>
