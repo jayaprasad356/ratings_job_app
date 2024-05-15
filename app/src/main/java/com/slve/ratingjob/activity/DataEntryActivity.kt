@@ -193,6 +193,7 @@ class DataEntryActivity : AppCompatActivity() {
 
     private fun apicall() {
         val params: MutableMap<String, String> = HashMap()
+        params["plan_id"] = session.getData(Constant.PLAN_ID)!!
         ApiConfig.RequestToVolley({ result, response ->
             if (result) {
                 try {
@@ -206,7 +207,6 @@ class DataEntryActivity : AppCompatActivity() {
                         val name = jsonArray.getJSONObject(0).getString("name")
                         val image = jsonArray.getJSONObject(0).getString("image")
                         val review = jsonArray.getJSONObject(0).getString("review")
-                        val category = jsonArray.getJSONObject(0).getString("category")
 
 
                         Glide.with(activity)
